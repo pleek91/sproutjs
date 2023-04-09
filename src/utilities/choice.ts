@@ -5,7 +5,7 @@ type Choice<T> = T extends Callback ? ReturnType<T> : T
 
 export function choice<T extends unknown[]>(...choices: T): Choice<T[number]> {
   const index = number({ min: 0, max: choices.length })
-  const choice = choices.at(index)
+  const choice = choices[index]
 
   if (typeof choice === 'function') {
     return choice()
