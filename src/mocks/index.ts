@@ -5,6 +5,7 @@ import { float } from '@/mocks/float'
 import { ipv4 } from '@/mocks/ipv4'
 import { number } from '@/mocks/number'
 import { phone } from '@/mocks/phone'
+import { ssn } from '@/mocks/ssn'
 
 export const mocks = {
   boolean,
@@ -14,4 +15,5 @@ export const mocks = {
   ipv4,
   number,
   phone,
+  ssn,
 }
