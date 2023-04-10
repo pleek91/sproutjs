@@ -6,6 +6,7 @@ import { ipv4 } from '@/mocks/ipv4'
 import { number } from '@/mocks/number'
 import { phone } from '@/mocks/phone'
 import { ssn } from '@/mocks/ssn'
+import { timezone } from '@/mocks/timezone'
 
 export const mocks = {
   boolean,
@@ -16,4 +17,5 @@ export const mocks = {
   number,
   phone,
   ssn,
+  timezone,
 }
