@@ -6,7 +6,7 @@ export type Ipv4Args = {
   type?: 'public' | 'private' | 'any',
 }
 
-function range(): string {
+function octect(): string {
   return `${number({ min: 0, max: 255 })}`
 }
 
@@ -14,14 +14,14 @@ function privateIp(): string {
   const type = choice('10', '127', '172', '192')
 
   if (type === '10' || type === '127') {
-    return `${type}.${range()}.${range()}.${range()}`
+    return `${type}.${octect()}.${octect()}.${octect()}`
   }
 
   if (type == '172') {
-    return `172.${number({ min: 16, max: 31 })}.${range()}.${range()}`
+    return `172.${number({ min: 16, max: 31 })}.${octect()}.${octect()}`
   }
 
-  return `192.168.${range()}.${range()}`
+  return `192.168.${octect()}.${octect()}`
 }
 
 export function ipv4({ type = 'public' }: Ipv4Args = {}): string {
@@ -29,7 +29,7 @@ export function ipv4({ type = 'public' }: Ipv4Args = {}): string {
     return privateIp()
   }
 
-  const ip = `${range()}.${range()}.${range()}.${range()}`
+  const ip = `${octect()}.${octect()}.${octect()}.${octect()}`
 
   if (type === 'any') {
     return ip
