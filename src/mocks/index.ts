@@ -1,21 +1,9 @@
-import { boolean } from '@/mocks/boolean'
-import { currency } from '@/mocks/currency'
-import { date } from '@/mocks/date'
-import { float } from '@/mocks/float'
-import { ipv4 } from '@/mocks/ipv4'
-import { number } from '@/mocks/number'
-import { phone } from '@/mocks/phone'
-import { ssn } from '@/mocks/ssn'
-import { timezone } from '@/mocks/timezone'
-
-export const mocks = {
-  boolean,
-  currency,
-  date,
-  float,
-  ipv4,
-  number,
-  phone,
-  ssn,
-  timezone,
-}
+export * from './boolean'
+export * from './currency'
+export * from './date'
+export * from './float'
+export * from './ipv4'
+export * from './number'
+export * from './phone'
+export * from './ssn'
+export * from './timezone'
