@@ -12,11 +12,6 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-    },
+    "skipLibCheck": true
   }
 }
