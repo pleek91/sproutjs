@@ -1,4 +1,4 @@
-import { number } from '@/mocks/number'
+import { number } from 'core'
 
 export type SsnArgs = {
   dashed?: boolean,
