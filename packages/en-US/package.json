@@ -10,6 +10,17 @@
     "lint:fix": "eslint ./ --fix",
     "validate:type": "vue-tsc --noEmit"
   },
+  "main": "./dist/en-US.umd.js",
+  "module": "./dist/en-US.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/en-US.mjs",
+      "require": "./dist/en-US.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "tsc-alias": "^1.8.5",
     "typescript": "^5.0.4",

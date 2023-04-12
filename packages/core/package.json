@@ -10,6 +10,18 @@
     "lint:fix": "eslint ./ --fix",
     "validate:type": "vue-tsc --noEmit"
   },
+  "main": "./dist/core.umd.js",
+  "module": "./dist/core.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/core.mjs",
+      "require": "./dist/core.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/types/src/index.d.ts",
   "dependencies": {
     "tsc-alias": "^1.8.5",
     "typescript": "^5.0.4",
