@@ -12,6 +12,7 @@ export default defineConfig((): UserConfig => ({
   },
   build: {
     sourcemap: true,
+    emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'core',
