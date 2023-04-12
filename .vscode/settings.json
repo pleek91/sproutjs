@@ -2,6 +2,10 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
     "octect",
+    "pleek",
     "prefecthq"
-  ]
+  ],
+  "files.exclude": {
+    "node_modules": true,
+},
 }
