@@ -1,5 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig, UserConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig((): UserConfig => ({
   resolve: {
@@ -12,10 +13,10 @@ export default defineConfig((): UserConfig => ({
   },
   build: {
     sourcemap: true,
-    emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'core',
     },
   },
+  plugins: [dts()]
 }))

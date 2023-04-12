@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "author": "pleek91",
   "scripts": {
-    "dev": "tsc -w & tsc-alias -w & vite build -w",
-    "build": "tsc && tsc-alias && vite build",
+    "dev": "vite build -w",
+    "build": "vite build",
     "test": "vitest",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
@@ -21,11 +21,11 @@
   "files": [
     "dist"
   ],
-  "types": "./dist/types/src/index.d.ts",
+  "types": "./dist/index.d.ts",
   "dependencies": {
-    "tsc-alias": "^1.8.5",
     "typescript": "^5.0.4",
     "vite": "^4.2.1",
+    "vite-plugin-dts": "^2.2.0",
     "vitest": "^0.30.1"
   }
 }
