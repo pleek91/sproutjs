@@ -11,7 +11,7 @@ describe('name', () => {
   })
 
   it('respects format argument', () => {
-    const value = name({ format: 'f m. l' })
+    const value = name({ format: 'f i. l' })
 
     expect(value).toMatch(/^[a-zA-Z]+ [A-Z]\. [a-zA-Z]+$/)
   })
