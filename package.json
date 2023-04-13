@@ -5,6 +5,8 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@prefecthq/eslint-config": "^1.0.25",
+    "eslint": "^8.38.0",
     "lerna": "^6.6.1"
   }
 }

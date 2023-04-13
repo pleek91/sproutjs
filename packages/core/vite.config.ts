@@ -18,5 +18,5 @@ export default defineConfig((): UserConfig => ({
       name: 'core',
     },
   },
-  plugins: [dts()]
+  plugins: [dts()],
 }))

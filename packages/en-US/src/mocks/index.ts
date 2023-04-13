@@ -1,1 +1,1 @@
-export * from './ssn';
+export * from './ssn'

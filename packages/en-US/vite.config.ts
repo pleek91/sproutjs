@@ -18,5 +18,5 @@ export default defineConfig((): UserConfig => ({
       name: 'en-US',
     },
   },
-  plugins: [dts()]
+  plugins: [dts()],
 }))
