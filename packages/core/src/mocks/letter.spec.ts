@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { letters } from '@/data/letters'
+import { alphabet } from '@/data/alphabet'
 import { letter } from '@/mocks/letter'
 
 describe('letter', () => {
@@ -7,7 +7,7 @@ describe('letter', () => {
   it('returns a letter', () => {
     const value = letter()
 
-    expect(letters).toContain(value)
+    expect(alphabet).toContain(value)
   })
 
 })

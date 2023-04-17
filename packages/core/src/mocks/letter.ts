@@ -1,6 +1,6 @@
-import { letters } from '@/data/letters'
+import { alphabet } from '@/data/alphabet'
 import { choice } from '@/utilities'
 
 export function letter(): string {
-  return choice(...letters)
+  return choice(...alphabet)
 }
