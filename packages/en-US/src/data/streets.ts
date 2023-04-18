@@ -52,3 +52,13 @@ export const streetSuffixes = [
   { name: 'Trail', abbreviation: 'Trl' },
   { name: 'Way', abbreviation: 'Way' },
 ]
+
+export const streetUnitDesignators = [
+  { name: 'Room', abbreviation: 'Rm' },
+  { name: 'Suite', abbreviation: 'Ste' },
+  { name: 'Apartment', abbreviation: 'Apt' },
+  { name: 'Building', abbreviation: 'Bldg' },
+  { name: 'Unit', abbreviation: 'Unit' },
+  { name: 'Mailbox', abbreviation: 'Box' },
+  { name: 'Penthouse', abbreviation: 'PH' },
+]
