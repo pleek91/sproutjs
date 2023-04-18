@@ -11,7 +11,7 @@ function octect(): string {
 }
 
 function privateIp(): string {
-  const type = choice('10', '127', '172', '192')
+  const type = choice(['10', '127', '172', '192'])
 
   if (type === '10' || type === '127') {
     return `${type}.${octect()}.${octect()}.${octect()}`

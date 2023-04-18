@@ -9,8 +9,8 @@ export function streetAddress(): string {
 
   if (shouldHaveUnitDesignator) {
     const unit = number({ min: 1, max: 100 })
-    const type = choice(...streetUnitDesignators)
-    const designator = choice(...Object.values(type))
+    const type = choice(streetUnitDesignators)
+    const designator = choice(Object.values(type))
 
     return `${streetNumber} ${streetName} ${designator} ${unit}`
   }

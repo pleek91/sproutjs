@@ -3,7 +3,7 @@ import { Callback } from '@/types'
 
 type Choice<T> = T extends Callback ? ReturnType<T> : T
 
-export function choice<T extends unknown[]>(...choices: T): Choice<T[number]> {
+export function choice<T extends unknown[] | Readonly<unknown[]>>(choices: T): Choice<T[number]> {
   const index = number({ min: 0, max: choices.length - 1 })
   const choice = choices[index]
 
@@ -11,5 +11,5 @@ export function choice<T extends unknown[]>(...choices: T): Choice<T[number]> {
     return choice()
   }
 
-  return choice as Choice<T[number]>
+  return choice as Choice<T>
 }

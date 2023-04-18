@@ -6,7 +6,7 @@ export type StateArgs = {
 }
 
 export function state({ abbreviation = false }: StateArgs = {}): string {
-  const value = choice(...states)
+  const value = choice(states)
 
   if (abbreviation) {
     return value.abbreviation

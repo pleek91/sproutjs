@@ -6,7 +6,7 @@ type TerritoryArgs = {
 }
 
 export function territory({ abbreviation = false }: TerritoryArgs = {}): string {
-  const value = choice(...territories)
+  const value = choice(territories)
 
   if (abbreviation) {
     return value.abbreviation
