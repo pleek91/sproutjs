@@ -18,4 +18,10 @@ describe('state', () => {
     expect(valid).toContain(value)
   })
 
+  it('respects state argument', () => {
+    const value = state({ state: 'IL' })
+
+    expect(['Illinois', 'IL']).toContain(value)
+  })
+
 })

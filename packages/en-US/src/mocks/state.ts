@@ -1,12 +1,16 @@
 import { choice } from 'core'
-import { states } from '@/data/states'
+import { StateAbbreviation, getStateByAbbreviation, stateAbbreviations, states } from '@/data/states'
 
 export type StateArgs = {
+  state?: StateAbbreviation,
   abbreviation?: boolean,
 }
 
-export function state({ abbreviation = false }: StateArgs = {}): string {
-  const value = choice(states)
+export function state({
+  state = choice(stateAbbreviations),
+  abbreviation = false,
+}: StateArgs = {}): string {
+  const value = getStateByAbbreviation(state)
 
   if (abbreviation) {
     return value.abbreviation
