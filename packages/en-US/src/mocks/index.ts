@@ -1,3 +1,4 @@
+export * from './address'
 export * from './firstName'
 export * from './lastName'
 export * from './name'
