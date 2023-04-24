@@ -1,5 +1,5 @@
 import { choice } from 'core'
-import { StateAbbreviation, getStateByAbbreviation, stateAbbreviations, states } from '@/data/states'
+import { StateAbbreviation, getStateByAbbreviation, stateAbbreviations } from '@/data/states'
 
 export type StateArgs = {
   state?: StateAbbreviation,
